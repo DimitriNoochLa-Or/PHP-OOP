@@ -1,9 +1,9 @@
 
 <?php 
-class Book{
+class Tiger{
 	public $firstName = "default name";
 	public $lastName = "default last name";
-	public $type = "paper";
+	public $type = "animal";
 	public $price = 0;
 
 		function getName() {
@@ -11,9 +11,8 @@ class Book{
 			"{$this->lastName}";
 		}
 }
-	$book1 = new Book();
-	$book1->firstName = "the tale of  ";
-	$book1->lastName = " the great book of nothing";
-	print "the Book's name is {$book1->getName()}.";
-	
+	$tiger1 = new Tiger();
+	$tiger1->firstName = "MR.micman ";
+	$tiger1->lastName = "liger";
+	print "the tigers's name is {$tiger1->getName()}.";
 ?>

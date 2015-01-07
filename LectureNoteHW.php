@@ -15,4 +15,5 @@ class Book{
 	$book1->firstName = "the tale of  ";
 	$book1->lastName = " the great book of nothing";
 	print "the Book's name is {$book1->getName()}.";
+	
 ?>

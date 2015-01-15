@@ -28,25 +28,29 @@
 // var_dump(is_double(1234));
 // var_dump(is_double(123));
 // var_dump(is_double(231));
- class car
+ class Car
  {
   public $models;
   public $colors;
+  public $question;
 
- 	function __construct($models,$colors)
+ 	function __construct($models,$colors, $question)
  	{
 	 	$this->models = $models;
 	 	$this->colors = $colors;
+	 	$this->question = $question;
 	 }
     function welcome()
     {
-  		return "welcome to the dealership, we many " .
-  		 $this->models . " in many " . $this->colors;
+  		return "welcome to the dealership we many " . 
+  		 $this->models . " in many " . $this->colors . "So " . $this->question ;
     }
+    
 
  }
   
 
-  $car = new Car(' honda civics', ' colors' );
+  $car = new Car(' honda civics', ' colors' , 'what color honda would u like?' );
 
   print $car->welcome();
+  
